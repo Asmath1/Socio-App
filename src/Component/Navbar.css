@@ -1,0 +1,96 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: yellow;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-toggler div {
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: yellowgreen;
+}
+
+.nav-toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and(max-width:768px) {
+    .nav-toggler {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        height: 93vh;
+        width: 50%;
+        background-color: orange;
+        flex-direction: column;
+        transform: translateX(100%);
+    }
+}
+
+/* nav active class */
+.nav-active {
+    transform: translateX(0%);
+}
+
+#applogo {
+    width: 109px;
+    height: 74px;
+    padding: 15px 0px 0px 30px;
+    flex-shrink: 0;
+}
+
+input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--base-white, #FFF);
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#search-icon {
+    display: flex;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 21px;
+    top: 15px;
+}

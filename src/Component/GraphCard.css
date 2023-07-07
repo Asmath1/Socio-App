@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+.Graph-container {
+    width: 300px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200, #EAECF0);
+    background: var(--base-white, #FFF);
+    margin: 0px 30px 10px 45px;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    color: var(--gray-900, #101828);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    align-items: flex-start;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Heading {
+    display: flex;
+}
+
+.data {
+    display: flex;
+    gap: 30px;
+}
+
+.data-badge {
+    display: flex;
+}

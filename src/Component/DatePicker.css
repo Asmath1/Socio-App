@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+}
+
+input {
+    display: flex;
+    width: 239px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
